@@ -1,5 +1,5 @@
-div {
-  border: 1px solid red;
+body {
+  font-family: 'Cormorant Garamond';
 }
 
 .header {
@@ -12,6 +12,9 @@ div {
 
 .header-link {
   margin: auto;
+  font-size: 28px;
+  text-decoration: none;
+  color: #10191e;
 }
 
 .menu {
@@ -22,7 +25,14 @@ div {
   flex-wrap: wrap;
   max-width: 1330px;
   min-width: 1280px;
-  margin: auto;
+  margin: 40px auto;
+}
+
+.menu-link {
+  font-size: 18px;
+  margin-right: 20px;
+  text-decoration: none;
+  color: #10191e;
 }
 
 .main {
@@ -33,12 +43,13 @@ div {
 
 .flex-row {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .flex-row_reversed {
   flex-direction: row-reverse;
+  margin: 60px auto;
 }
 
 .flex-column,
