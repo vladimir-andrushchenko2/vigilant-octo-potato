@@ -11,14 +11,33 @@ div {
   margin: auto;
 }
 
+.menu {
+  display: flex;
+  justify-content: center;
+}
+
 .flex-row {
   display: flex;
+  justify-content: space-around;
+}
+
+.flex-row_reversed {
+  flex-direction: row-reverse;
 }
 
 .flex-column,
 .project_procrastinate {
   width: 636px;
   height: 557px;
+}
+
+.flex-column {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-column_reversed {
+  flex-direction: column-reverse;
 }
 
 .project {
