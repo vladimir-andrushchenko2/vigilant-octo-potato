@@ -5,6 +5,9 @@ div {
 .header {
   height: 95px;
   display: flex;
+  max-width: 1330px;
+  min-width: 1280px;
+  margin: auto;
 }
 
 .header-link {
@@ -17,6 +20,15 @@ div {
   align-items: center;
   min-height: 75px;
   flex-wrap: wrap;
+  max-width: 1330px;
+  min-width: 1280px;
+  margin: auto;
+}
+
+.main {
+  max-width: 1330px;
+  min-width: 1280px;
+  margin: auto;
 }
 
 .flex-row {
@@ -99,12 +111,35 @@ div {
 
 .project_how-to-study {
   background-image: url('https://code.s3.yandex.net/web-code/how-to-study.png');
+  order: 3;
 }
 
 .project_across-russia {
   background-image: url('https://code.s3.yandex.net/web-code/across-russia.png');
+  order: 2;
+  flex-basis: 636px;
 }
 
 .project_mesto {
   background-image: url('https://code.s3.yandex.net/web-code/mesto.png');
+  order: 1;
+}
+
+.footer {
+  display: flex;
+  height: 95px;
+  justify-content: center;
+  max-width: 1330px;
+  min-width: 1280px;
+  margin: auto;
+}
+
+.logo {
+  width: 145px;
+  height: 25px;
+  background-size: contain;
+  background-image: url('https://pictures.s3.yandex.net/logo_black.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  align-self: center;
 }
