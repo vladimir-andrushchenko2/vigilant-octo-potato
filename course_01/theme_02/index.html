@@ -16,17 +16,17 @@
     <link rel="stylesheet" href="style.css" />
     <title>Портфолио</title>
   </head>
-  <body>
+  <body class="page">
     <header class="header">
-      <a href="#" class="header-link" lang="en">Vladimir Andrushchenko</a>
+      <a href="#" class="header__link" lang="en">Vladimir Andrushchenko</a>
     </header>
     <nav class="menu">
-      <a href="#" class="menu-link">Первые шаги в HTML и CSS</a>
-      <a href="#" class="menu-link">Библиотеки JavaScript</a>
-      <a href="#" class="menu-link">Практика HTML, CSS и JavaScript</a>
+      <a href="#" class="menu__link">Первые шаги в HTML и CSS</a>
+      <a href="#" class="menu__link">Библиотеки JavaScript</a>
+      <a href="#" class="menu__link">Практика HTML, CSS и JavaScript</a>
     </nav>
-    <main class="main">
-      <ul class="flex-row">
+    <main class="content">
+      <ul class="flex-row list">
         <li class="project project_beginner project_music-album"></li>
         <li class="project project_beginner project_design-principles"></li>
       </ul>
@@ -34,21 +34,21 @@
         <div class="flex-column flex-column_reversed">
           <div class="project project_frameworks project_p5">
             <video
-              class="project-video"
+              class="project__video"
               src="https://code.s3.yandex.net/web-code/like.mp4"
               autoplay
               muted
               loop
             ></video>
           </div>
-          <ul class="flex-row flex-row_frameworks-inner">
+          <ul class="flex-row flex-row_frameworks-inner list">
             <li class="project project_frameworks project_slider"></li>
             <li class="project project_frameworks project_reactive"></li>
           </ul>
         </div>
         <div class="project project_frameworks project_procrastinate">
           <video
-            class="project-video"
+            class="project__video"
             src="https://code.s3.yandex.net/web-code/procrastinate.mov"
             autoplay
             muted
@@ -56,14 +56,14 @@
           ></video>
         </div>
       </section>
-      <ul class="flex-row">
+      <ul class="flex-row list">
         <li class="project project_vanilla project_how-to-study"></li>
         <li class="project project_vanilla project_across-russia"></li>
         <li class="project project_vanilla project_mesto"></li>
       </ul>
     </main>
     <footer class="footer">
-      <div class="logo"></div>
+      <div class="footer__logo"></div>
     </footer>
   </body>
 </html>
