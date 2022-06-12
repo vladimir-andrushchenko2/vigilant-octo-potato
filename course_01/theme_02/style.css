@@ -27,6 +27,14 @@
   height: 430px;
 }
 
+.project_width_l {
+  width: 636px;
+}
+
+.project_width_m {
+  width: 306px;
+}
+
 .project_music-album {
   background-image: url(https://code.s3.yandex.net/web-code/album.png);
 }
@@ -152,6 +160,10 @@
   text-decoration: none;
   color: #10191e;
   margin-right: 20px;
+}
+
+.menu__link_active {
+  text-decoration: underline;
 }
 
 .list {
