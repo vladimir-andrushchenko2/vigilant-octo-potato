@@ -46,11 +46,11 @@
   height: 240px;
 }
 
-.project_music-album {
+.project_name_music-album {
   background-image: url(https://code.s3.yandex.net/web-code/album.png);
 }
 
-.project_design-principles {
+.project_name_design-principles {
   background-image: url(https://code.s3.yandex.net/web-code/design.png);
 }
 
@@ -75,11 +75,11 @@
   object-fit: cover;
 }
 
-.project_slider {
+.project_name_slider {
   background-image: url(https://code.s3.yandex.net/web-code/slider.gif);
 }
 
-.project_reactive {
+.project_name_reactive {
   background-image: url(https://code.s3.yandex.net/web-code/reactive.gif);
 }
 
@@ -99,17 +99,17 @@
   margin: 40px auto;
 }
 
-.project_how-to-study {
+.project_name_how-to-study {
   background-image: url(https://code.s3.yandex.net/web-code/how-to-study.png);
   order: 3;
 }
 
-.project_across-russia {
+.project_name_across-russia {
   background-image: url(https://code.s3.yandex.net/web-code/across-russia.png);
   order: 2;
 }
 
-.project_mesto {
+.project_name_mesto {
   background-image: url(https://code.s3.yandex.net/web-code/mesto.png);
   order: 1;
 }
