@@ -59,6 +59,10 @@
   margin-right: 20px;
 }
 
+.menu__link:last-of-type {
+  margin: 0;
+}
+
 .menu__link_active {
   text-decoration: underline;
 }
@@ -81,6 +85,27 @@
 .project {
   background-position: center;
   background-size: cover;
+}
+
+.project__overlay {
+  background-color: rgba(0, 0, 100, 0.8);
+  height: 100%;
+  width: 100%; /* растянули ссылку во весь блок */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* выровняли текст по центру средствами flex */
+  text-decoration: none; /* убрали подчеркивание  */
+  color: white;
+  text-transform: uppercase;
+  font-size: 30px;
+  text-align: center;
+  box-sizing: border-box; /* задали внутренний фокус элемента, чтобы контейнер не расширялся */
+  padding: 20px; /* отступ, чтобы текст не касался краёв */
+  opacity: 0;
+}
+
+.project__overlay:hover {
+  opacity: 1;
 }
 
 .project_width_l {
