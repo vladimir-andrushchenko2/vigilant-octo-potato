@@ -42,6 +42,20 @@
   color: #10191e;
 }
 
+.header__link::after {
+  content: '!';
+}
+
+.header__link[lang='ru']::before {
+  content: 'Привет, меня зовут ';
+}
+.header__link[lang='en']::before {
+  content: 'Hello, my name is ';
+}
+.header__link[lang='fr']::before {
+  content: 'Bonjour, je suis ';
+}
+
 .menu {
   display: flex;
   justify-content: center;
