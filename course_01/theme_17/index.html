@@ -18,23 +18,42 @@
             <div class="form__container">
                 <form class="form__admin">
                     <div class="form__main-container">
+                        <h2 class="form__heading">Задайте параметры</h2>
                         <fieldset class="form__input-container form__input-container_ctrl_texts">
                             <input type="text" name="" id="" class="form__item form__item_el_heading">
                             <input type="text" name="" id="" class="form__item form__item_el_subheading">
+                            <textarea name="" id="" class="form__item form__item_el_main-text"></textarea>
                             <input type="email" name="" id="" class="form__item form__item_el_email">
                         </fieldset>
                         <div class="form__line"></div>
                         <fieldset class="form__input-container form__input-container_ctrl_visual">
-                            <input type="number" name="" id="" class="form__item form__item_el_heading-fontsize">
-                            <input type="number" name="" id="" class="form__item form__item_el_text-fontsize">
+                            <select class="form__item form__item_el_font-family" name="" id="">
+                                <option value="">IBM Plex Serif</option>
+                                <option value="">Ubuntu</option>
+                                <option value="">Istok Web</option>
+                            </select>
+                            <input type="number" name="" id="" class="form__item form__item_el_heading-fontsize"
+                                min="24" max="80">
+                            <input type="number" name="" id="" class="form__item form__item_el_text-fontsize" min="12"
+                                max="40">
                             <input type="date" name="" id="" class="form__item form__item_el_pubdate">
+                            <select name="" id="" class="form__item form__item_el_image">
+                                <option value="">Bombardier CS300</option>
+                                <option value="">Боинг-777 Хоббит</option>
+                                <option value="">Тигролёт</option>
+                                <option value="">Connected to 01000010 01001100 01010101 01000101</option>
+                            </select>
                         </fieldset>
                         <fieldset class="form__input-container form__input-container_ctrl_additional">
                             <input type="color" name="" id="" class="form__item form__item_el_text-color">
-                            <input type="range" name="" id="" class="form__item form__item_el_conten-width">
+                            <input type="range" name="" id="" class="form__item form__item_el_content-width" min="30"
+                                max="80" step="10">
                         </fieldset>
                     </div>
-                    <fieldset class="form__handers"></fieldset>
+                    <fieldset class="form__handlers">
+                        <input type="submit" value="" class="form__button">
+                        <input type="reset" value="" class="form__button">
+                    </fieldset>
                 </form>
             </div>
         </section>
