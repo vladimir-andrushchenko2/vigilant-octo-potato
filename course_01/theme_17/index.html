@@ -20,24 +20,33 @@
                     <div class="form__main-container">
                         <h2 class="form__heading">Задайте параметры</h2>
                         <fieldset class="form__input-container form__input-container_ctrl_texts">
-                            <input type="text" name="" id="" class="form__item form__item_el_heading">
-                            <input type="text" name="" id="" class="form__item form__item_el_subheading">
-                            <textarea name="" id="" class="form__item form__item_el_main-text"></textarea>
-                            <input type="email" name="" id="" class="form__item form__item_el_email">
+                            <label for="heading">Заголовок</label>
+                            <input type="text" name="" id="heading" class="form__item form__item_el_heading">
+                            <label for="subheading">Подзаголовок</label>
+                            <input type="text" name="" id="subheading" class="form__item form__item_el_subheading">
+                            <label for="main-text">Текст статьи</label>
+                            <textarea name="" id="main-text" class="form__item form__item_el_main-text"></textarea>
+                            <label for="email">E-mail</label>
+                            <input type="email" name="" id="email" class="form__item form__item_el_email">
                         </fieldset>
                         <div class="form__line"></div>
                         <fieldset class="form__input-container form__input-container_ctrl_visual">
-                            <select class="form__item form__item_el_font-family" name="" id="">
+                            <label for="font-family">Семейство шрифтов</label>
+                            <select class="form__item form__item_el_font-family" name="" id="font-family">
                                 <option value="">IBM Plex Serif</option>
                                 <option value="">Ubuntu</option>
                                 <option value="">Istok Web</option>
                             </select>
-                            <input type="number" name="" id="" class="form__item form__item_el_heading-fontsize"
-                                min="24" max="80">
-                            <input type="number" name="" id="" class="form__item form__item_el_text-fontsize" min="12"
-                                max="40">
-                            <input type="date" name="" id="" class="form__item form__item_el_pubdate">
-                            <select name="" id="" class="form__item form__item_el_image">
+                            <label for="heading-font-size">Размер текста заголовка</label>
+                            <input type="number" name="" id="heading-font-size"
+                                class="form__item form__item_el_heading-fontsize" min="24" max="80">
+                            <label for="text-font-size">Размер текста абзаца</label>
+                            <input type="number" name="" id="text-font-size"
+                                class="form__item form__item_el_text-fontsize" min="12" max="40">
+                            <label for="pub-date">Дата создания статьи</label>
+                            <input type="date" name="" id="pub-date" class="form__item form__item_el_pubdate">
+                            <label for="image">Обложка статьи</label>
+                            <select name="" id="image" class="form__item form__item_el_image">
                                 <option value="">Bombardier CS300</option>
                                 <option value="">Боинг-777 Хоббит</option>
                                 <option value="">Тигролёт</option>
@@ -45,9 +54,11 @@
                             </select>
                         </fieldset>
                         <fieldset class="form__input-container form__input-container_ctrl_additional">
-                            <input type="color" name="" id="" class="form__item form__item_el_text-color">
-                            <input type="range" name="" id="" class="form__item form__item_el_content-width" min="30"
-                                max="80" step="10">
+                            <label for="text-color">Цвет текста</label>
+                            <input type="color" name="" id="text-color" class="form__item form__item_el_text-color">
+                            <label for="content-width">Ширина контента</label>
+                            <input type="range" name="" id="content-width"
+                                class="form__item form__item_el_content-width" min="30" max="80" step="10">
                         </fieldset>
                     </div>
                     <fieldset class="form__handlers">
