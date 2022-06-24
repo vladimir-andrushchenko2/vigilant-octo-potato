@@ -201,7 +201,7 @@ select.form__item {
 }
 
 /* Селектор поля единичного выбора со значением атрибута value "two-columns" */
-.form__item[value='two-columns'] {
+.form__item[type='radio'][value='two-columns'] {
   margin-left: 25px;
 }
 
@@ -228,6 +228,7 @@ select.form__item {
   margin: 0;
   width: 320px;
   height: 40px;
+  font-size: 0;
 }
 
 .form__button {
