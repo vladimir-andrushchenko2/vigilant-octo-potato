@@ -57,6 +57,12 @@
                         </fieldset>
                         <fieldset class="form__input-container form__input-container_ctrl_additional">
                             <h3 class="form__heading form__heading_type_ctrl-el-heading">Количество колонок</h3>
+                            <input class="form__item form__item_el_number-of-columns" type="radio"
+                                name="number-of-columns" id="one-column" value="one-column">
+                            <label class="form__label form__label_direction_right" for="one-column">1</label>
+                            <input class="form__item form__item_el_number-of-columns" type="radio"
+                                name="number-of-columns" id="two-columns" value="two-columns">
+                            <label class="form__label form__label_direction_right" for="two-columns">2</label>
                             <label class="form__label" for="text-color">Цвет текста</label>
                             <input type="color" name="text-color" id="text-color"
                                 class="form__item form__item_el_text-color" value="#979797">
@@ -64,6 +70,10 @@
                             <input type="range" name="content-width" id="content-width"
                                 class="form__item form__item_el_content-width" min="30" max="80" step="10">
                             <h3 class="form__heading form__heading_type_ctrl-el-heading">Дополнительные параметры</h3>
+                            <input type="checkbox" name="extra-option" value="black-background" id="black-background"
+                                class="form__item form__item_el__extra_options">
+                            <input type="checkbox" name="extra-option" value="bold-heading" id="bold-heading"
+                                class="form__item form__item_el__extra_options">
                         </fieldset>
                     </div>
                     <fieldset class="form__handlers">
