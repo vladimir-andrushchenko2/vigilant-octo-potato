@@ -126,96 +126,93 @@
   margin: 35px auto 0;
   font-size: 20px;
   line-height: 30px;
+  display: block;
 }
 
-/* Общие стили для всех полей ввода */
-/*
-  .form__item {
-    border: 0;
-    width: 100%;
-    height: 24px;
-    box-sizing: border-box;
-    border-bottom: 1px solid #bcbcc4;
-    background-color: transparent;
-    margin-top: 5px;
-    font-size: 14px;
-    font-family: inherit;
-  }
-  */
+.form__item {
+  border: 0;
+  width: 100%;
+  height: 24px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #bcbcc4;
+  background-color: transparent;
+  margin-top: 5px;
+  font-size: 14px;
+  font-family: inherit;
+}
 
 /* Замена цвета внешней линии при фокусе поля ввода */
+.form__item:focus {
+  outline-color: #fff6c5;
+}
 
 /* Стилизуем плейсхолдеры */
 
 /* Поля ввода */
 
-/* Селектор класса поля ввода основного текста {
-    background: #fff;
-    height: 150px;
-    font-size: 14px;
-    padding: 6px 6px 4px;
-    border: 1px solid #bcbcc4;
-  }
-  */
+.form__item_el_main-text {
+  background: #fff;
+  height: 150px;
+  font-size: 14px;
+  padding: 6px 6px 4px;
+  border: 1px solid #bcbcc4;
+}
 
-/* Селектор поля ввода с типом "число" {
-    background-color: white;
-    color: black;
-    border: 1px solid #bcbcc4;
-    padding: 0 4px;
-  }
-  */
+.form__item[type='number'] {
+  background-color: white;
+  color: black;
+  border: 1px solid #bcbcc4;
+  padding: 0 4px;
+}
 
-/* Селектор поля ввода с типом "дата" {
-    background-color: white;
-    color: black;
-    border: 1px solid #bcbcc4;
-    padding: 0 4px;
-    font-family: 'Alegreya Sans', sans-serif;
-  }
-  */
+/* Селектор поля ввода с типом "дата" */
+.form__item[type='date'] {
+  background-color: white;
+  color: black;
+  border: 1px solid #bcbcc4;
+  padding: 0 4px;
+  font-family: 'Alegreya Sans', sans-serif;
+}
 
-/* Селектор поля ввода с типом "цвет" {
-    height: 30px;
-    width: 48px;
-    border-bottom: 0;
-    padding: 0;
-  }
-  */
+/* Селектор поля ввода с типом "цвет" */
+.form__item[type='color'] {
+  height: 30px;
+  width: 48px;
+  border-bottom: 0;
+  padding: 0;
+}
 
-/* Селектор поля ввода с типом "диапазон" {
-    width: 144px;
-  }
-  */
+/* Селектор поля ввода с типом "диапазон" */
+.form__item[type='range'] {
+  width: 144px;
+}
 
-/* Поле выпадающего списка с классом form_item */
-/* select.form__item {
-    background-color: white;
-    color: black;
-    border: 1px solid #bcbcc4;
-  }
-  */
+select.form__item {
+  background-color: white;
+  color: black;
+  border: 1px solid #bcbcc4;
+}
 
-/* Селектор поля единичного выбора {
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-  }
-  */
+/* Селектор поля единичного выбора */
+.form__item[type='radio'] {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
 
-/* Селектор поля единичного выбора со значением атрибута value "two-columns" {
-    margin-left: 25px;
-  }
-  */
+/* Селектор поля единичного выбора со значением атрибута value "two-columns" */
+.form__item[value='two-columns'] {
+  margin-left: 25px;
+}
 
-/* Селектор поля множественного выбора {
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    vertical-align: middle;
-    margin: 0;
-  }
-  */
+/* Селектор поля множественного выбора */
+.form__item[type='checkbox'] {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  margin: 0;
+}
 
 .form__label_direction_right {
   display: inline;
@@ -233,36 +230,38 @@
   height: 40px;
 }
 
-/* Общие стили для всех кнопок */
-/* .form__button {
-    width: 50%;
-    height: 40px;
-    font-size: 14px;
-    border: 0;
-    margin: 0;
-    padding-bottom: 5px;
-    cursor: pointer;
-    transition: opacity .4s;
-    color: white;
-    font-family: inherit;
-  }
-  
-  .form__button:hover {
-    opacity: .7;
-  }
-  */
+.form__button {
+  width: 50%;
+  height: 40px;
+  font-size: 14px;
+  border: 0;
+  margin: 0;
+  padding-bottom: 5px;
+  cursor: pointer;
+  transition: opacity 0.4s;
+  color: white;
+  font-family: inherit;
+}
+
+.form__button:hover {
+  opacity: 0.7;
+}
 
 /* Замена цвета внешней линии при фокусе кнопки */
 
-/* Селектор кнопки отправки данных {
-    background-color: #000;
-  }
-  */
+.form__button:focus {
+  outline-color: #fff6c5;
+}
 
-/* Селектор кнопки сброса формы {
-    background-color: #ea3a3a;
-  }
-  */
+/* Селектор кнопки отправки данных */
+.form__button[type='submit'] {
+  background-color: #000;
+}
+
+/* Селектор кнопки сброса формы */
+.form__button[type='reset'] {
+  background-color: #ea3a3a;
+}
 
 /* Стили страницы */
 

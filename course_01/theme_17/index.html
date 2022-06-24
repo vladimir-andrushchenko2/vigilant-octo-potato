@@ -21,15 +21,17 @@
                         <h2 class="form__heading">Заголовок</h2>
                         <fieldset class="form__input-container form__input-container_ctrl_texts">
                             <label class="form__label" for="heading">Заголовок</label>
-                            <input type="text" name="heading" id="heading" class="form__item form__item_el_heading">
+                            <input type="text" name="heading" id="heading" class="form__item form__item_el_heading"
+                                placeholder="О чём статья?" required>
                             <label class="form__label" for="subheading">Подзаголовок</label>
                             <input type="text" name="subheading" id="subheading"
-                                class="form__item form__item_el_subheading">
+                                class="form__item form__item_el_subheading" placeholder="Краткое описание" required>
                             <label class="form__label" for="main-text">Текст статьи</label>
-                            <textarea name="main-text" id="main-text"
-                                class="form__item form__item_el_main-text"></textarea>
+                            <textarea name="main-text" id="main-text" class="form__item form__item_el_main-text"
+                                placeholder="Здесь будет основной текст вашей статьи" required></textarea>
                             <label class="form__label" for="email">E-mail</label>
-                            <input type="email" name="email" id="email" class="form__item form__item_el_email">
+                            <input type="email" name="email" id="email" class="form__item form__item_el_email"
+                                placeholder="hello@example.com">
                         </fieldset>
                         <div class="form__line"></div>
                         <fieldset class="form__input-container form__input-container_ctrl_visual">
@@ -58,7 +60,7 @@
                         <fieldset class="form__input-container form__input-container_ctrl_additional">
                             <h3 class="form__heading form__heading_type_ctrl-el-heading">Количество колонок</h3>
                             <input class="form__item form__item_el_number-of-columns" type="radio"
-                                name="number-of-columns" id="one-column" value="one-column">
+                                name="number-of-columns" id="one-column" value="one-column" checked>
                             <label class="form__label form__label_direction_right" for="one-column">1</label>
                             <input class="form__item form__item_el_number-of-columns" type="radio"
                                 name="number-of-columns" id="two-columns" value="two-columns">
@@ -75,7 +77,7 @@
                             <label for="black-background" class="form__label form__label_direction_right">Чёрный
                                 фон</label>
                             <input type="checkbox" name="extra-option" id="bold-heading"
-                                class="form__item form__item_el_extra-options" value="bold-heading">
+                                class="form__item form__item_el_extra-options" value="bold-heading" checked>
                             <label for="bold-heading" class="form__label form__label_direction_right">Жирный
                                 заголовок</label>
                         </fieldset>
