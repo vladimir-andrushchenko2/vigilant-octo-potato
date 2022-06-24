@@ -209,6 +209,18 @@ select.form__item {
   clip: rect(0 0 0 0);
 }
 
+.form__pseudo-item {
+  display: inline-block; /* элемент span теперь сможет принимать определённую ширину и высоту */
+  vertical-align: middle; /* элемент и текст будут правильно выровнены по вертикали. Работает в паре с inline-block */
+  width: 16px;
+  height: 16px; /* размеры */
+  border: 1px solid black; /* граница */
+}
+
+.form__pseudo-item_type_radio {
+  border-radius: 50%;
+}
+
 .form__label_direction_right {
   display: inline;
   font-size: 14px;
