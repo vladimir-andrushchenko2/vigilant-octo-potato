@@ -148,6 +148,16 @@
 
 /* Стилизуем плейсхолдеры */
 
+.form__item::placeholder,
+.form__item::-webkit-input-placeholder,
+.form__item::-moz-placeholder,
+.form__item::-ms-input-placeholder {
+  font-size: 14px;
+  font-family: 'Alegreya Sans';
+  color: #bcbcc4;
+  line-height: 20px;
+}
+
 /* Поля ввода */
 
 .form__item_el_main-text {
@@ -219,6 +229,32 @@ select.form__item {
 
 .form__pseudo-item_type_radio {
   border-radius: 50%;
+}
+
+.form__item_el_number-of-columns:disabled + .form__pseudo-item_type_radio {
+  border: 1px solid grey;
+}
+
+.form__item_el_number-of-columns:disabled:checked
+  + .form__pseudo-item_type_radio {
+  background-image: url(https://code.s3.yandex.net/web-code/plane_grey.svg);
+}
+
+.form__item_el_number-of-columns:focus + .form__pseudo-item_type_radio {
+  box-shadow: 0 0 5px #fff6c5;
+}
+
+.form__item_el_extra-options:disabled + .form__pseudo-item_type_checkbox {
+  border: 1px solid grey;
+}
+
+.form__item_el_extra-options:disabled:checked
+  + .form__pseudo-item_type_checkbox {
+  background-image: url(https://code.s3.yandex.net/web-code/tick_grey.svg);
+}
+
+.form__item_el_extra-options:focus + .form__pseudo-item_type_checkbox {
+  box-shadow: 0 0 5px #fff6c5;
 }
 
 .form__label_direction_right {
